@@ -1,0 +1,7 @@
+{:deps {:aliases [:cljs-build]}
+ 
+ :builds
+ {:main {:target :node-script
+         :output-to "target/test-runner.js"
+         :main reactor-core.test-runner/main
+         :compiler-options {:output-feature-set :es-next}}}}

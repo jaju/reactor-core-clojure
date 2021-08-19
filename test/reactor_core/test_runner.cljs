@@ -31,14 +31,15 @@
 
 (enable-console-print!)
 
-(run-tests 'reactor-core.publisher-test
-           ;; operators
-           'reactor-core.publisher.map-test
-           'reactor-core.publisher.mapcat-test
-           'reactor-core.publisher.take-test
-           'reactor-core.publisher.take-until-test
-           'reactor-core.publisher.zip-test
-           ;; processor
-           'reactor-core.processor-test
-           ;; clojure integration
-           'reactor-core.reducer-test)
+(defn main []
+  (run-tests 'reactor-core.publisher-test
+             ;; operators
+             'reactor-core.publisher.map-test
+             'reactor-core.publisher.mapcat-test
+             'reactor-core.publisher.take-test
+             'reactor-core.publisher.take-until-test
+             'reactor-core.publisher.zip-test
+             ;; processor
+             'reactor-core.processor-test
+             ;; clojure integration
+             'reactor-core.reducer-test))
