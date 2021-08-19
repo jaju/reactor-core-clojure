@@ -1,14 +1,14 @@
 {:paths ["src" "test"]
+
  :deps {org.clojure/clojure {:mvn/version "1.11.0-alpha1"}
         org.clojure/clojurescript {:mvn/version "1.10.879"}
-        io.projectreactor/reactor-core {:mvn/version "3.4.9"}
-        ;;com.google.javascript/closure-compiler-unshaded {:mvn/version "v20210808"}
-        }
- 
+        io.projectreactor/reactor-core {:mvn/version "3.4.9"}}
+
  :aliases
  {:cljs-build {:extra-deps {thheller/shadow-cljs {:mvn/version "2.15.4"}}}
   :test {:extra-deps {io.github.cognitect-labs/test-runner
                       {:git/url "https://github.com/cognitect-labs/test-runner.git"
-                       :sha "8c3f22363d63715de4087b038d79ae0de36a3263"}}
+                       :sha "4e7e1c0dfd5291fa2134df052443dc29695d8cbe"}}
          :main-opts ["-m" "cognitect.test-runner"]
-         :exec-fn cognitect.test-runner.api/test}}}
+         :exec-fn cognitect.test-runner.api/test}
+  }}

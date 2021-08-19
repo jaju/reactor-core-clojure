@@ -35,4 +35,4 @@
                                                                              :target        :nodejs
                                                                              :main          reactor-core.test-runner}}]}}
              :dev  {:dependencies [[com.fzakaria/slf4j-timbre "0.3.21"]]
-                    :plugins      [[lein-cloverage "1.1.0"]]}})
+                    :plugins      [[lein-cloverage "1.2.2"]]}})

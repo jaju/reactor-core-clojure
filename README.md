@@ -1,7 +1,5 @@
 # Reactor Core Clojure
 
-[![Build Status](https://travis-ci.org/tsachev/reactor-core-clojure.svg?branch=master)](https://travis-ci.org/jaju/reactor-core-clojure)
-
 A Clojure(Script) library for reactor-core.
 
 ## Usage
