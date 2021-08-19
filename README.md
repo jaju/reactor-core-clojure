@@ -1,14 +1,13 @@
 # Reactor Core Clojure
 
-[![Build Status](https://travis-ci.org/tsachev/reactor-core-clojure.svg?branch=master)](https://travis-ci.org/tsachev/reactor-core-clojure)
-[![codecov](https://codecov.io/gh/tsachev/reactor-core-clojure/branch/master/graph/badge.svg)](https://codecov.io/gh/tsachev/reactor-core-clojure)
+[![Build Status](https://travis-ci.org/tsachev/reactor-core-clojure.svg?branch=master)](https://travis-ci.org/jaju/reactor-core-clojure)
 
 A Clojure(Script) library for reactor-core.
 
 ## Usage
 
 ```
-[io.tsachev/reactor-core-clojure "0.1.0-SNAPSHOT"]
+[org.msync/reactor-core-clojure "0.1.1-SNAPSHOT"]
 ```
 
 ```clojure

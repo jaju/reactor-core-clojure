@@ -20,12 +20,12 @@
   :license {:name         "The Apache Software License, Version 2.0"
             :url          "https://www.apache.org/licenses/LICENSE-2.0.txt"
             :distribution :repo}
-  :dependencies [[org.clojure/clojure "1.9.0" :scope "provided"]
-                 [io.projectreactor/reactor-core "3.1.8.RELEASE"]]
+  :dependencies [[org.clojure/clojure "1.10.3" :scope "provided"]
+                 [io.projectreactor/reactor-core "3.4.9"]]
   :target-path "target/%s"
-  :profiles {:cljs {:managed-dependencies [[com.google.javascript/closure-compiler-unshaded "v20180716"]]
-                    :dependencies         [[org.clojure/clojurescript "1.10.339" :scope "provided"]]
-                    :plugins              [[lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]]
+  :profiles {:cljs {:managed-dependencies [[com.google.javascript/closure-compiler-unshaded "v20210808"]]
+                    :dependencies         [[org.clojure/clojurescript "1.10.879" :scope "provided"]]
+                    :plugins              [[lein-cljsbuild "1.1.8" :exclusions [[org.clojure/clojure]]]]
                     :cljsbuild            {:test-commands {"run" ["node" "target/test-runner.js"]}
                                            :builds        [{:source-paths   ["src" "test"]
                                                             :notify-command ["node" "target/test-runner.js"]
@@ -34,5 +34,5 @@
                                                                              :optimizations :none
                                                                              :target        :nodejs
                                                                              :main          reactor-core.test-runner}}]}}
-             :dev  {:dependencies [[com.fzakaria/slf4j-timbre "0.3.12"]]
-                    :plugins      [[lein-cloverage "1.0.11"]]}})
+             :dev  {:dependencies [[com.fzakaria/slf4j-timbre "0.3.21"]]
+                    :plugins      [[lein-cloverage "1.1.0"]]}})
