@@ -1,7 +1,6 @@
 {:deps {:aliases [:cljs-build]}
  
  :builds
- {:main {:target :node-script
+ {:test {:target :node-test
          :output-to "target/test-runner.js"
-         :main reactor-core.test-runner/main
-         :compiler-options {:output-feature-set :es-next}}}}
+         :autorun   true}}}
