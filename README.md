@@ -5,7 +5,8 @@ A Clojure(Script) library for reactor-core.
 ## Usage
 
 ```
-[org.msync/reactor-core-clojure "0.1.1-SNAPSHOT"]
+{:deps
+ {io.github.jaju/reactor-core-clojure {:git/sha "74c793e1e7fcbdcddeb6bf2c38437a830a91bcc0"}}}
 ```
 
 ```clojure
